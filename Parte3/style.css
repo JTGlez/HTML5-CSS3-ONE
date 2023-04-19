@@ -1,0 +1,172 @@
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0; /*Añade espaciamiento al header desde el inicio de la página de arriba a abajo*/
+}
+
+
+.caja{
+    width: 940px;
+    position: relative; /*Relativa a la posición absoluta*/
+    margin: 0 auto; /*Centra la barra de navegación: centrar el div!! */
+
+}
+
+nav{
+    position:absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li{
+    display: inline; /*Texto en una única línea*/
+    margin: 0 0 0 15px; /*Coordenadas de espaciamiento*/
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+/*Captura del movimiento del mouse*/
+nav a:hover{
+    color: #c78c19;
+
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+/*Para los items de la lista*/
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%; /*Cada elemento debe ocupar el 30% de toda la lista*/
+    vertical-align: top;
+    background-color: #FFFFFF;
+    margin: 0 1.5%; /*Añade espacio externo entre los elementos de la lista*/
+    padding: 30px 20px; /*Espaciamiento vertical y horizontal, aumento de contenido*/
+    box-sizing: border-box; /*Se contabilizan en el 30% de cada item de la lista*/
+    /*Definición de los bordes*/
+    border: 2px solid #000000;
+    border-radius: 10px; /*Redondeo de bordes homogéneo*/
+
+    /*
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid; /*dotted, dashed...
+    border-top-width: 10px; */
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+}
+
+/*Aplica a los headers y realiza override al tamaño de la letra, para que no de preferencia a la clase con selector h2*/
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+/*Estilo de elementos a los que se hace click*/
+.productos li:active{
+    border-color: #088c19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+    margin-top: 10px; /*Para separar ligeramente la descripción del la imagen*/
+}
+
+.producto-precio{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    background: url(bg.jpg);
+    position: absolute;
+    bottom: 100;
+    left: 0;
+    right: 0;
+    height: auto;
+    padding-top: 10px;
+    
+}
+
+.copyright{
+	color: #FFFFFF;
+    font-size: 13px;
+    margin: 10px;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px ; /*top der abajo*/
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%; 
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0; /*Arriba abajo, laterales*/
+    font-size: 18px;
+    font-weight: bold;
+    color:#FFFFFF;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all; /*Hace que la transición al posar el mouse sea más suave y no de golpe*/
+    cursor: pointer; /*Cambia el cursor a un pointer*/
+}
+
+.enviar:hover{
+    background-color:darkorange;
+    transform: scale(1.2); /*Aumenta la escala uniformemente de todo el botón*/
+
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000; /*Líneas de la tabla*/
+    padding: 8px 15px;
+}
