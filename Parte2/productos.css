@@ -1,0 +1,104 @@
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0; /*Añade espaciamiento al header desde el inicio de la página de arriba a abajo*/
+}
+
+
+.caja{
+    width: 940px;
+    position: relative; /*Relativa a la posición absoluta*/
+    margin: 0 auto; /*Centra la barra de navegación: centrar el div!! */
+
+}
+
+nav{
+    position:absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li{
+    display: inline; /*Texto en una única línea*/
+    margin: 0 0 0 15px; /*Coordenadas de espaciamiento*/
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+/*Captura del movimiento del mouse*/
+nav a:hover{
+    color: #c78c19;
+
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+/*Para los items de la lista*/
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%; /*Cada elemento debe ocupar el 30% de toda la lista*/
+    vertical-align: top;
+    background-color: #FFFFFF;
+    margin: 0 1.5%; /*Añade espacio externo entre los elementos de la lista*/
+    padding: 30px 20px; /*Espaciamiento vertical y horizontal, aumento de contenido*/
+    box-sizing: border-box; /*Se contabilizan en el 30% de cada item de la lista*/
+    /*Definición de los bordes*/
+    border: 2px solid #000000;
+    border-radius: 10px; /*Redondeo de bordes homogéneo*/
+
+    /*
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid; /*dotted, dashed...
+    border-top-width: 10px; */
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+}
+
+/*Aplica a los headers y realiza override al tamaño de la letra, para que no de preferencia a la clase con selector h2*/
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+/*Estilo de elementos a los que se hace click*/
+.productos li:active{
+    border-color: #088c19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+    margin-top: 10px; /*Para separar ligeramente la descripción del la imagen*/
+}
+
+.producto-precio{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    background: url(bg.jpg);
+}
+
+.copyright{
+	color: #FFFFFF;
+    font-size: 13px;
+    margin: 10px;
+}
