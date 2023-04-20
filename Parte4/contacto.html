@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link rel = "stylesheet" href = "reset.css">
+        <link rel ="stylesheet" href = "style.css">
+
+    </head>
+    <body>
+
+        <!--Barra de navegación de la página web-->
+        <header>
+            <div class = "caja">
+                <h1>
+                    <img src="logo.png" alt="Logo de la Barbería Alura">
+                </h1>
+    
+                <nav>
+                    <ul class = "navegacion">
+                        <li><a href = "index.html">Home</a></li>
+                        <li><a href = "productos.html">Productos</a></li>
+                        <li><a href = "contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!--Contenido de la página web-->
+        <main>
+
+            <form>
+                <!--Label e input relacionados para hacer referencia entre ellos-->
+                <label for = "nombreapellido">Nombre y apellido</label>
+                <input type = "text" id = "nombreapellido" class="input-padron" required 
+                placeholder="Ingrese su nombre y apellido">
+
+                <label for = "correoelectronico">Correo electrónico</label>
+                <input type = "email" id = "correoelectronico" class="input-padron" required
+                placeholder="email@dominio.com">
+
+                <label for = "telefono">Teléfono</label>
+                <input type = "tel" id = "telefono" class="input-padron"
+                placeholder="(XX) XXX-XXX-XXX">
+
+                <label for = "mensaje">Mensaje</label>
+                <textarea cols = "70" rows = "10" id = "mensaje"></textarea>
+
+                <!--Para etiquetar elementos que hacen referencia a una misma acción o categoría de formulario con datos que pertenecen a tal categoría-->
+                <fieldset>
+                    <p>¿Cómo le gustaría ser contactado?</p>
+
+                    <label for =  "radio-email">
+                        <input type = "radio" name = "contacto" value = "email" id = "radio-email">Email
+                    </label>
+        
+    
+                    <label for =  "radio-telefono">
+                        <input type = "radio" name = "contacto" value = "telefono" id = "radio-telefono">Teléfono
+                    </label>
+                    
+    
+                    <label for =  "radio-whatsapp">
+                        <input type = "radio" name = "contacto" value = "whatsapp" id = "radio-whatsapp" checked>WhatsApp
+                    </label>
+                
+                </fieldset>
+
+                <fieldset>
+                    <!--Eiqueta usada para títulos de campos-->
+                    <legend>¿En cuál horario prefiere ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+
+                </fieldset>
+
+
+                <label class="checkbox"><input type = "checkbox" checked> ¿Le gustaría recibir novedades de la Barbería Alura?</label>
+                <input type="submit" value = "Enviar formulario" class = "enviar">
+
+            </form>
+
+            <!--Eiqueta usada para construir tablas. td se usa para los valores de las columnas y tr para delimitar filas de la tabla-->
+            <table>
+
+                <!--Encabezado de la tabla-->
+                <thead>
+                    <tr>
+
+                    <th>Dia</th>
+                    <th>Horario</th>
+
+                    </tr>
+                </thead>
+
+                 <!--Contenido de filas y columnas de la tabla-->
+                <tbody>
+
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08hrs - 20hrs</td>
+    
+                    </tr>
+    
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>08hrs - 20hrs</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08hrs - 20hrs</td>
+                    </tr>
+
+                </tbody>
+
+                
+            </table>
+
+        </main>
+
+
+        <!--Etiqueta semántica del pie de página-->
+        <footer>
+            <img src = "logo-blanco.png" alt="Logo de la Barbería Alura">
+            <p class = "copyright">&copy Copyright Barbería Alura - 2020</p>
+
+        </footer>
+        
+    </body>
+</html>
